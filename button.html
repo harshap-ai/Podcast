@@ -1,0 +1,39 @@
+
+The Vox Intellectus Podcast
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .button-container {
+      display: flex;
+    }
+    .button-container button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+<div class="button-container">
+  <button id="columnA">Harish</button>
+  <button id="columnB">Chris</button>
+</div>
+
+<script>
+  document.getElementById("columnA").addEventListener("click", function() {
+    this.style.backgroundColor = "green";
+    document.getElementById("columnB").style.backgroundColor = "";
+  });
+
+  document.getElementById("columnB").addEventListener("click", function() {
+    this.style.backgroundColor = "green";
+    document.getElementById("columnA").style.backgroundColor = "";
+  });
+</script>
+
+</body>
+</html>
